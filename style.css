@@ -1,5 +1,11 @@
 /* BASE STYLES */
 
+body {
+    background-color: #FFFF00;
+    animation: background 5s linear backwards;
+    animation-iteration-count: infinite;
+}
+
 .wrapper {
     width: 100%;
     position: fixed;
@@ -9,17 +15,132 @@
     transform: translate(-50%, -50%);
 }
 
+/* KEYFRAMES */
+
+@keyframes background{
+    0%{
+        background-color: #FFFF00;
+    }
+    32% {
+        background-color: #FFFF00;
+    }
+
+    33% {
+        background-color: #0000FF;
+    }
+
+    65% {
+        background-color: #0000FF;
+    }
+
+    66% {
+        background-color: #FF0000;
+    }
+    99%{
+        background-color: #FF0000;
+    }
+    100%{
+        background-color: #FFFF00;
+    }
+}
+
+@keyframes outline-soon {
+    0%{
+        fill: transparent;
+        stroke: black;
+    }
+
+    32% {
+        fill: transparent;
+        stroke: black;
+    }
+
+    33% {
+        fill: black;
+        stroke: none;
+    }
+
+    65% {
+        fill: black;
+        stroke: none;
+    }
+
+    66% {
+        fill: transparent;
+        stroke: black;
+    }
+
+    99%{
+        fill: transparent;
+        stroke: black;
+    }
+    100%{
+        fill: transparent;
+        stroke: black;
+    }
+}
+
+@keyframes outline-coming {
+    0%{
+        fill: black;
+        stroke: none;
+    }
+
+    32% {
+        fill: black;
+        stroke: none;
+    }
+
+    33% {
+        fill: transparent;
+        stroke: black;
+    }
+
+    65% {
+        fill: transparent;
+        stroke: black;
+    }
+
+    66% {
+        fill: black;
+        stroke: none;
+    }
+
+    99%{
+        fill: black;
+        stroke: none;
+    }
+
+    100%{
+        fill: black;
+        stroke: none;
+    }
+}
+
 /* COMING SOON TEXT */
 
 .coming-soon-wrapper {
     width: 80%;
     margin: auto;
+    overflow: visible;
 
 }
 
 /* COMING TEXT */
+.coming{
+    stroke-width: 2;
+    animation: outline-coming 5s linear forwards;
+    animation-iteration-count: infinite;
+}
 
 /* SOON TEXT */
+.soon {
+    fill: transparent;
+    stroke: black;
+    stroke-width: 2;
+    animation: outline-soon 5s linear forwards;
+    animation-iteration-count: infinite;
+}
 
 /* DATE TEXT */
 
