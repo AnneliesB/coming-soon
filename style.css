@@ -2,7 +2,7 @@
 
 body {
     background-color: #FFFF00;
-    animation: background 5s linear backwards;
+    animation: background 1s linear backwards;
     animation-iteration-count: infinite;
 }
 
@@ -50,29 +50,19 @@ body {
         stroke: black;
     }
 
-    32% {
+    49% {
         fill: transparent;
         stroke: black;
     }
 
-    33% {
+    50% {
         fill: black;
-        stroke: none;
-    }
-
-    65% {
-        fill: black;
-        stroke: none;
-    }
-
-    66% {
-        fill: transparent;
-        stroke: black;
+        stroke: 2;
     }
 
     99%{
-        fill: transparent;
-        stroke: black;
+        fill: black;
+        stroke: 2;
     }
     100%{
         fill: transparent;
@@ -81,40 +71,31 @@ body {
 }
 
 @keyframes outline-coming {
+
     0%{
         fill: black;
-        stroke: none;
+        stroke: 2;
     }
 
-    32% {
+    49% {
         fill: black;
-        stroke: none;
+        stroke: 2;
     }
 
-    33% {
+    50% {
         fill: transparent;
         stroke: black;
-    }
-
-    65% {
-        fill: transparent;
-        stroke: black;
-    }
-
-    66% {
-        fill: black;
-        stroke: none;
     }
 
     99%{
-        fill: black;
-        stroke: none;
+        fill: transparent;
+        stroke: black;
     }
-
     100%{
         fill: black;
-        stroke: none;
+        stroke: 2;
     }
+
 }
 
 /* COMING SOON TEXT */
@@ -128,8 +109,9 @@ body {
 
 /* COMING TEXT */
 .coming{
+    stroke: black;
     stroke-width: 2;
-    animation: outline-coming 5s linear forwards;
+    animation: outline-coming 0.66s linear forwards;
     animation-iteration-count: infinite;
 }
 
@@ -138,7 +120,7 @@ body {
     fill: transparent;
     stroke: black;
     stroke-width: 2;
-    animation: outline-soon 5s linear forwards;
+    animation: outline-soon 0.66s linear forwards;
     animation-iteration-count: infinite;
 }
 
@@ -150,3 +132,18 @@ body {
 }
 
 .date {}
+
+@media(min-width: 900px){
+    .date-wrapper {
+        width: 160px;
+
+    }
+}
+
+
+@media(min-width: 1200px){
+    .date-wrapper {
+        width: 200px;
+
+    }
+}
