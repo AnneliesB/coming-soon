@@ -1,0 +1,31 @@
+/* BASE STYLES */
+
+.wrapper {
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+/* COMING SOON TEXT */
+
+.coming-soon-wrapper {
+    width: 80%;
+    margin: auto;
+
+}
+
+/* COMING TEXT */
+
+/* SOON TEXT */
+
+/* DATE TEXT */
+
+.date-wrapper {
+    width: 120px;
+    margin: 2em auto;
+}
+
+.date {}
