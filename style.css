@@ -111,7 +111,7 @@ body {
 .coming{
     stroke: black;
     stroke-width: 2;
-    animation: outline-coming 0.66s linear forwards;
+    animation: outline-coming calc(1s/3*2) linear forwards;
     animation-iteration-count: infinite;
 }
 
@@ -120,7 +120,7 @@ body {
     fill: transparent;
     stroke: black;
     stroke-width: 2;
-    animation: outline-soon 0.66s linear forwards;
+    animation: outline-soon calc(1s/3*2) linear forwards;
     animation-iteration-count: infinite;
 }
 
